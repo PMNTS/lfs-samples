@@ -1,0 +1,8 @@
+item[0][product_code]=1300
+item[0][description]=iPhone
+item[0][total]=799.00
+item[0][quantity]=1
+item[1][product_code]=1300
+item[1][description]=Toshiba MP3 Player
+item[1][total]=329.00
+item[1][quantity]=1
