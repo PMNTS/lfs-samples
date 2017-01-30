@@ -1,0 +1,25 @@
+<form id="sop_checkout_form" action="https://uat.gec-hosted.cybshosting.com/ge-sop/ProcessOrder.do" method="post">
+  <!-- Start Request fields output   -->
+  <input type="hidden" name="ccAuthService_run" value="true">
+  <input type="hidden" name="merchantReferenceCode" value="C12329977">
+  <input type="hidden" name="authorizationType" value="C">
+  <input type="hidden" name="merchantID" value="123456789">
+  <input type="hidden" name="orderPage_timestamp" value="1389833605659">
+  <input type="hidden" name="orderPage_version" value="7">
+  <!-- etc............ -->
+
+  <!-- Start Payment fields output   -->
+  <label for="promoCode">Terms of payment</label>
+  <select name="promoCode">
+      <option value="">Select</option>
+      <option value="1024">24 Months 0% Interest – without repayments</option>
+      <option value="2012">12 months Interest Free - with repayments</option>
+      <option value="2006">6 months Interest Free - with repayments</option>
+  </select>
+
+  <label for="card_accountNumber">Card number</label>
+  <input type="text" id="card_accountNumber" name="card_accountNumber" value="">
+  <!-- etc............ -->
+
+  <input type="submit" value="Submit">
+</form>
