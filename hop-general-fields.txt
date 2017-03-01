@@ -1,0 +1,7 @@
+merchantID=000100111
+reference=5555
+total=20000
+currency=AUD
+promo_code=1012
+promo_dscription=12 Months Interest Free With Repayments
+items_count=3
