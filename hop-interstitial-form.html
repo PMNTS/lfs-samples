@@ -1,0 +1,28 @@
+<form id="interstitial-form" action="https://paynow-sandbox.ipsi.com.au/bespoke/latitude/TEST" method="POST">
+    <input type="hidden" name="return_path" value="https://www.merchant.com/interest_free/complete" />
+    <input type="hidden" name="logo" value="https://www.merchant.com/images/logo.png" />
+    <input id="merchant" name="merchant" type="hidden" value="TEST">
+    <input id="merchant_id" name="merchant_id" type="hidden" value="000407223">
+    <input type="hidden" name="reference" value="ABCD1234" />
+    <input type="hidden" name="currency" value="AUD" />
+    <input type="hidden" name="total" value="1015000" />
+    <input type="hidden" name="promo_code" value="2024" />
+    <input type="hidden" name="promo_description" value="24 Months Interest Free with minimum monthly repayments" />
+    <input id="eapps_data" name="eapps_data" type="hidden" value="pBBXUpSxPTZyONQiebZNBaHgR4o1RIfSdf3aKB/ChZ8m4S29kaA+MLIDAWLsmy2EQc5Bo9cv3FJ1F4Y+7mTeaa4kkC6qaQh/1/0w4pLVmEsaBWNBf/Y96WIRcRefsQDk4ZzUcRyvVsVGJoErsppQCy3/56q7zGlhy/GtwnNwNdwe5Lc58F4GyzVv8UKnY+eZb7fS3ejBuuaNru+F1R3Q9W4LNvYD1lyR3ASD4SO4Z0M=">
+    <input id="verification" name="verification" type="hidden" value="7821196be718bbf5d01b80c1837fc831">
+    <input id="accepted_cards" name="accepted_cards" type="hidden" value="gem,creditline,buyers_edge,go">
+    <input type="hidden" name="items[0][product_code]" value="1030" />
+    <input type="hidden" name="items[0][description]" value="Surge Protector"/>
+    <input type="hidden" name="items[0][quantity]" value="1" />
+    <input type="hidden" name="items[0][total]" value="10000"/>
+
+    <input type="hidden" name="items[1][product_code]" value="1030" />
+    <input type="hidden" name="items[1][description]" value="100\" Television"/>
+    <input type="hidden" name="items[1][quantity]" value="1" />
+    <input type="hidden" name="items[1][total]" value="1000000"/>
+
+    <input type="hidden" name="items[2][product_code]" value="1020" />
+    <input type="hidden" name="items[2][description]" value="Delivery"/>
+    <input type="hidden" name="items[2][total]" value="5000"/>
+    <button type="submit">Checkout</button>
+</form>
