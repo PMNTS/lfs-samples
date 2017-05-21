@@ -1,3 +1,5 @@
+<?php
+
 include_once 'web/util/merchantConstants.php';
 include_once 'web/buy/cybs/param/hopMerchantRequestResponseParameter.php';
 include_once 'web/buy/request/generator/hopRequestGenerator.php';

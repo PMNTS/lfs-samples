@@ -1,3 +1,5 @@
+<?php
+
 include_once 'web/util/merchantConstants.php';
 include_once 'web/buy/cybs/param/hopMerchantRequestResponseParameter.php';
 include_once 'web/buy/request/generator/hopRequestGenerator.php';
@@ -17,7 +19,7 @@ $amount = $_REQUEST["amount"];
 // Create a variable to store the params
 $inputParameters = array();
 
-// Add each of the parameters into the array object  
+// Add each of the parameters into the array object
 $inputParameters[LFS::REFERENCE] = $reference;
 $inputParameters[LFS::PROMO_CODE] = $promoCode;
 $inputParameters[LFS::CURRENCY] = $currency;
