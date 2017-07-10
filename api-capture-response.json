@@ -1,0 +1,32 @@
+{
+  "successful": true,
+  "response": {
+    "authorization": "662236",
+    "id": "071-P-NFQZ3580",
+    "card_number": "424242XXXXXX4242",
+    "card_holder": "Max Smith",
+    "card_expiry": "2025-04-30",
+    "card_token": "fke8y75a",
+    "card_type": "VISA",
+    "card_category": "Credit",
+    "card_subcategory": "Credit",
+    "amount": 1000,
+    "decimal_amount": 10.0,
+    "successful": true,
+    "message": "Approved",
+    "reference": "55a7ef12-a837-543c-9d67-653e9836e21e",
+    "currency": "AUD",
+    "transaction_id": "071-P-NFQZ3580",
+    "settlement_date": "2017-06-15",
+    "transaction_date": "2017-06-15T08:28:11.424+10:00",
+    "response_code": "00",
+    "captured": true,
+    "captured_amount": 1000,
+    "rrn": "03fb808fb158",
+    "cvv_match": "M",
+    "metadata": {},
+    "addendum_data": null
+  },
+  "errors": [],
+  "test": true
+}
