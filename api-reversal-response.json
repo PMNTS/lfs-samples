@@ -1,0 +1,32 @@
+{
+   "response" : {
+      "currency" : "AUD",
+      "cvv_match" : "M",
+      "successful" : false,
+      "metadata" : {},
+      "response_code" : "00",
+      "decimal_amount" : 1,
+      "transaction_date" : "2017-07-10T15:09:53+10:00",
+      "card_token" : "fke8noo8",
+      "captured" : false,
+      "card_subcategory" : "Credit",
+      "card_type" : "VISA",
+      "rrn" : "071PRPLTQS5Q",
+      "reference" : "53rhqjf6",
+      "card_category" : "Credit",
+      "card_expiry" : "2018-12-01",
+      "message" : "Voided",
+      "authorization" : "870418",
+      "id" : "071-P-RPLTQS5Q",
+      "transaction_id" : "071-P-RPLTQS5Q",
+      "card_holder" : "Card Holder",
+      "card_number" : "411111XXXXXX1111",
+      "addendum_data" : {},
+      "settlement_date" : null,
+      "captured_amount" : 0,
+      "amount" : 100
+   },
+   "successful" : true,
+   "test" : true,
+   "errors" : []
+}
