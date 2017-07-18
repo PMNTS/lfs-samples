@@ -1,4 +1,4 @@
-<form action="https://paynow-sandbox.ipsi.com.au/bespoke/latitude" method="post">
+<form action="https://gateway-sandbox.ipsi.com.au/v2/purchases/direct/lfs-12345678" method="post">
     <?php
     while(list($key, $value) = each($output)){
     ?>
