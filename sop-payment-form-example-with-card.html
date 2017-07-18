@@ -1,26 +1,40 @@
-<label for="promoCode">Terms of payment</label>
-<select name="promoCode">
+<form action="https://gateway-sandbox.ipsi.com.au/v2/purchases/direct/lfs-mage-acct" method="post">
+  <input type="hidden" name="reference" value="905784" />
+  <input type="hidden" name="metadata[interest_free][items_count]" value="1" />
+  <input type="hidden" name="currency" value="AUD" />
+  <input type="hidden" name="amount" value="10000" />
+  <input type="hidden" name="merchant_id" value="lfs-mage-acct" />
+  <input type="hidden" name="return_path" value="http://lfs.dev/sop/return" />
+  <input type="hidden" name="metadata[interest_free][items][0][product_code]" value="1300" />
+  <input type="hidden" name="metadata[interest_free][items][0][description]" value="Testing" />
+  <input type="hidden" name="metadata[interest_free][items][0][total]" value="10000" />
+  <input type="hidden" name="metadata[interest_free][promo_code]" value="1024" />
+  <input type="hidden" name="metadata[interest_free][promo_description]" value="12 Months Interest Free With Repayments" />
+  <input type="hidden" name="eapps_data" value="pBBXUpSxPTZyONQiebZNBaHgR4o1RIfSdf3aKB/ChZ8m4S29kaA MLIDAWLsmy2EQc5Bo9cv3FJ1F4Y 7mTeaa4kkC6qaQh/1/0w4pLVmEsaBWNBf/Y96WIRcRefsQDk4ZzUcRyvVsVGJoErsppQCy3/56q7zGlhy/GtwnNwNdwe5Lc58F4GyzVv8UKnY eZb7fS3ejBuuaNru F1R3Q9W4LNvYD1lyR3ASD4SO4Z0M=" />
+  <input type="hidden" name="verification" value="7cd5f316ba5c3a11f0a883f8d6ccd6e6" />
+
+  <label for="promo_code">Terms of payment</label>
+  <select name="metadata[interest_free][promo_code]" id="promo_code">
     <option value="">Select</option>
-    <option value="1024">24 Months 0% Interest – without repayments</option>
+    <option value="1024" selected>24 Months 0% Interest – without repayments</option>
     <option value="2012">12 months Interest Free - with repayments</option>
     <option value="2006">6 months Interest Free - with repayments</option>
-</select>
+  </select>
+  
+  <label for="card_number">Card number</label>
+  <input type="text" id="card_number" name="card_number" value="4242424242424242">
 
-<label for="card_accountNumber">Card number</label>
-<input type="text" id="card_accountNumber" name="card_accountNumber" value="">
+  <label for="cvv">CVC/CVV</label>
+  <input type="text" id="cvv" name="cvv" value="123">
 
-<label for="card_cvNumber">CVC/CVV</label>
-<input type="text" id="card_cvNumber" name="card_cvNumber" value="">
+  <label for="card_holder">Name on card</label>
+  <input type="text" id="card_holder" name="card_holder" value="Max Smith">
 
-<label for="cardName">Name on card</label>
-<input type="text" id="cardName" name="cardName" value="">
-<a href="/account">Or use your Account Number</a>
-
-<label for="card_expirationMonth">Card expiry date</label>
-<select id="card_expirationMonth" name="card_expirationMonth">
-    <option value="">Month</option>
+  <label for="expiry_month">Card expiry date</label>
+  <select id="expiry_month" name="expiry_month">
+    <option value="">MM</option>
     <option value="01">01 January</option>
-    <option value="02">02 February</option>
+    <option value="02" selected>02 February</option>
     <option value="03">03 March</option>
     <option value="04">04 April</option>
     <option value="05">05 May</option>
@@ -31,9 +45,10 @@
     <option value="10">10 October</option>
     <option value="11">11 November</option>
     <option value="12">12 December</option>
-</select>
-<select id="card_expirationYear" name="card_expirationYear">
-    <option value="">Year</option>
+  </select>
+  
+  <select id="expiry_year" name="expiry_year">
+    <option value="">YYYY</option>
     <option value="14">2014</option>
     <option value="15">2015</option>
     <option value="16">2016</option>
@@ -43,8 +58,9 @@
     <option value="20">2020</option>
     <option value="21">2021</option>
     <option value="22">2022</option>
-    <option value="23">2023</option>
+    <option value="23" selected>2023</option>
     <option value="24">2024</option>
-</select>
+  </select>
 
-<input type="submit" value="Submit">
+  <input type="submit" value="Checkout with Interest Free" />
+</form>

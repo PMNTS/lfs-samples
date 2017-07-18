@@ -1,24 +1,23 @@
-<form id="sop_checkout_form" action="https://uat.gec-hosted.cybshosting.com/ge-sop/ProcessOrder.do" method="post">
+<form id="sop_checkout_form" action="https://gateway-sandbox.ipsi.com.au/v2/purchases/direct/lfs-12345678" method="post">
   <!-- Start Request fields output   -->
-  <input type="hidden" name="ccAuthService_run" value="true">
-  <input type="hidden" name="merchantReferenceCode" value="C12329977">
-  <input type="hidden" name="authorizationType" value="C">
-  <input type="hidden" name="merchantID" value="123456789">
-  <input type="hidden" name="orderPage_timestamp" value="1389833605659">
-  <input type="hidden" name="orderPage_version" value="7">
+  <input type="hidden" name="reference" value="905784" />
+  <input type="hidden" name="currency" value="AUD" />
+  <input type="hidden" name="amount" value="10000" />
+  <input type="hidden" name="merchant_id" value="lfs-12345678" />
+  <input type="hidden" name="return_path" value="http://merchantwebsite.com/lfs/sop/return" />
   <!-- etc............ -->
 
   <!-- Start Payment fields output   -->
-  <label for="promoCode">Terms of payment</label>
-  <select name="promoCode">
+  <label for="promo_code">Terms of payment</label>
+  <select name="promo_code">
       <option value="">Select</option>
       <option value="1024">24 Months 0% Interest – without repayments</option>
       <option value="2012">12 months Interest Free - with repayments</option>
       <option value="2006">6 months Interest Free - with repayments</option>
   </select>
 
-  <label for="card_accountNumber">Card number</label>
-  <input type="text" id="card_accountNumber" name="card_accountNumber" value="">
+  <label for="card_number">Card number</label>
+  <input type="text" id="card_number" name="card_number" value="">
   <!-- etc............ -->
 
   <input type="submit" value="Submit">
