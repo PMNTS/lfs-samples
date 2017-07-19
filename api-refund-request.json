@@ -1,5 +1,21 @@
 {
   "transaction_id": "071-P-AVK8J9IU",
   "reference": "CRD001987",
-  "amount": 109900
+  "amount": 109900,
+  "metadata": {
+    "interest_free": {
+      "auth_type": "C",
+      "mid": "00001234",
+      "promo_code": "1234",
+      "items": [
+        {
+          "code": "1234",
+          "quantity": 5,
+          "description": "Dining Chair",
+          "cost": 45.0,
+          "line_total": 225.0
+        }
+      ]
+    }
+  }
 }
