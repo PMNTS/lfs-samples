@@ -13,7 +13,7 @@
           "quantity": 5,
           "description": "Dining Chair",
           "cost": 45.0,
-          "line_total": 225.0
+          "total": 225.0
         }
       ]
     }
